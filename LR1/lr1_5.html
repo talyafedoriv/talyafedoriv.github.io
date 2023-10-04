@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 5</title>
+  </head>
+  <body>
+    <script>
+      var numberOfStudents = parseInt(
+        prompt("Введіть кількість студентів у групі:")
+      );
+      if (!isNaN(numberOfStudents) && numberOfStudents > 0) {
+        var studentList = "";
+        document.write("Список студентів:<br>");
+        for (var i = 1; i <= numberOfStudents; i++) {
+          var lastName = prompt("Прізвище студента №" + i + ":");
+          var firstName = prompt("Ім'я студента №" + i + ":");
+          studentList += lastName + " " + firstName + "<br>";
+        }
+
+        document.write(studentList);
+      } else {
+        document.write(
+          "Некоректна кількість студентів. Будь ласка, введіть додатне число."
+        );
+      }
+    </script>
+  </body>
+</html>

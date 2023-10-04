@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 3</title>
+  </head>
+  <body>
+    <script>
+      var monthNumber = parseInt(window.prompt("Введіть номер місяця (1-12):"));
+      if (!isNaN(monthNumber) && monthNumber >= 1 && monthNumber <= 12) {
+        var season = "";
+        switch (monthNumber) {
+          case 12:
+          case 1:
+          case 2:
+            season = "Зима";
+            break;
+          case 3:
+          case 4:
+          case 5:
+            season = "Весна";
+            break;
+          case 6:
+          case 7:
+          case 8:
+            season = "Літо";
+            break;
+          case 9:
+          case 10:
+          case 11:
+            season = "Осінь";
+            break;
+        }
+
+        window.alert(
+          "Пора року для " + monthNumber + " місяця  - " + season + "."
+        );
+      } else {
+        window.alert(
+          "Некоректний номер місяця. Будь ласка, введіть число від 1 до 12."
+        );
+      }
+    </script>
+  </body>
+</html>

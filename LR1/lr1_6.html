@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 6</title>
+  </head>
+  <body>
+    <script>
+      var userInput;
+      var userList = "";
+      do {
+        userInput = prompt(
+          "Введіть прізвище та ім'я студента (або натисніть 'Скасувати' для завершення):"
+        );
+        if (userInput !== null) {
+          userList += userInput + "<br>";
+        }
+      } while (userInput !== null);
+      if (userList.trim() !== "") {
+        document.write("Список студентів:<br>" + userList);
+      } else {
+        document.write("Ви не ввели жодного прізвища та імені.");
+      }
+    </script>
+  </body>
+</html>

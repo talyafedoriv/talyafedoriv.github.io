@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 40%;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+    <title>Завдання 7</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Таблиця множення:</h1>");
+      document.write("<table>");
+      document.write("<tr><th>Множник</th>");
+      for (var i = 1; i <= 10; i++) {
+        document.write("<th>" + i + "</th>");
+      }
+      document.write("</tr>");
+      for (var i = 1; i <= 10; i++) {
+        document.write("<tr>");
+        document.write("<td><b>" + i + "</b></td>");
+        for (var j = 1; j <= 10; j++) {
+          document.write("<td>" + i * j + "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>

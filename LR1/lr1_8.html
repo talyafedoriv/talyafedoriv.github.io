@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 8</title>
+  </head>
+  <body>
+    <p>Опитування</p>
+    <form id="surveyForm">
+      <label for="nameInput">Введіть ваше ім'я:</label>
+      <input type="text" id="nameInput" required />
+      <br />
+      <br />
+      <label>Що вам більше подобається?</label>
+      <br />
+      <input type="radio" id="iceCream" name="preference" value="морозиво" />
+      <label for="iceCream">Морозиво</label>
+      <br />
+      <input type="radio" id="chocolate" name="preference" value="шоколад" />
+      <label for="chocolate">Шоколад</label>
+      <br />
+      <br />
+      <input type="button" value="Відправити" onclick="submitForm()" />
+    </form>
+
+    <script>
+      function submitForm() {
+        var nameInput = document.getElementById("nameInput").value;
+        console.log("Впишіть сюди своє ім'я: " + nameInput);
+
+        var preference = document.querySelector(
+          'input[name="preference"]:checked'
+        );
+        if (preference) {
+          console.log("Ви обрали: " + preference.value);
+        } else {
+          console.log("Ви не обрали жодного варіанту");
+        }
+
+        alert("Дякуємо за участь в опитуванні!");
+      }
+    </script>
+  </body>
+</html>
