@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Libre Franklin;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.header-block {
+  height: 100vh;
+  position: relative;
+  background: url("../images/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-block header {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(198, 108, 73, 0.3);
+  z-index: 1;
+}
+
+.content-wrap {
+  max-width: 1100px;
+  margin-top: 36px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-menu {
+  position: absolute;
+  left: -9999px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/*     */
+
+.header-block {
+  height: 275px;
+}
+
+.content-wrap {
+  flex-direction: row;
+  align-items: center;
+}
+
+header .content-wrap .logo {
+  order: 2;
+}
+
+.menu-list {
+  position: absolute;
+  backdrop-filter: blur(1px);
+  z-index: 10;
+  margin-left: -130px;
+}
+
+.menu-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.menu-list a {
+  color: #000;
+  text-decoration: none;
+  font-family: Libre Franklin;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-menu .icons i {
+  color: white;
+  margin-left: -250px;
+}
+
+.main-page {
+  text-align: center;
+}
+
+.main-page,
+.main-page a {
+  color: #fff;
+  background: none;
+  z-index: 2;
+}
+
+.main-page a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.main-page h1 {
+  margin-top: 40px;
+  margin-bottom: 14px;
+}
+
+.main-page p {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about,
+.skill-container,
+.portfolio,
+footer {
+  padding: 0 32px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.skills-list {
+  width: calc(40% - 10px);
+
+  margin-bottom: 20px;
+  margin-top: 24px;
+  white-space: nowrap;
+}
+
+.skill-tools {
+  width: calc(60% - 10px);
+  margin-bottom: 10px;
+  margin-top: 24px;
+  white-space: nowrap;
+}
+
+.skill-container img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.skill h3,
+h4,
+p {
+  font-size: 12px;
+}
+
+.skill-container h2 {
+  padding-top: 24px;
+}
+
+.skill-container {
+  background-color: #fffaf2;
+}
+
+.skills-list,
+.skill-tools {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list ul,
+.skill-tools ul {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 20px;
+}
+
+.skill-tools li {
+  margin-bottom: 20px;
+}
+
+.skill-level {
+  width: 210px;
+  height: 14px;
+  background-color: rgba(245, 214, 171, 1);
+}
+
+.skill-level-indicator {
+  height: 100%;
+  width: 100%;
+  background-color: #c66c49;
+}
+
+.portfolio h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+footer {
+  background-color: #fffaf2;
+}
+
+.address-contact {
+  font-style: normal;
+  padding-top: 26px;
+}
+
+.address-contact-link {
+  margin-bottom: 30px;
+}
+
+.address-contact-link a {
+  padding-bottom: 10px;
+  color: #000;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-contact-link li {
+  padding-bottom: 10px;
+}
+
+.address-contact-list li {
+  padding-bottom: 4px;
+}
+
+.address-contact-list {
+  padding-bottom: 20px;
+}
+
+.address-contact-list li a {
+  color: #000;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.portfolio a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  width: 200px;
+  padding: 8px;
+  margin: 8px auto;
+  text-decoration: none;
+  color: #c66c49;
+  background: #fffaf2;
+  border: 1px solid #c66c49;
+  border-radius: 10px;
+}
+
+.portfolio a:hover {
+  background: #c66c49;
+  color: #fffaf2;
+}
+
+.portfolio h3 {
+  text-align: center;
+}
+
+.scroll-to-top {
+  font-size: 24px;
+  color: #000;
+  right: 20px;
+  text-decoration: none;
+  bottom: 20px;
+  position: fixed;
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .header-block {
+    height: 100vh;
+    position: relative;
+    background: url("../images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-block header {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+
+  header .content-wrap .logo {
+    order: 0;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .hide-menu {
+    position: static;
+  }
+
+  #mainMenu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: right;
+    padding-left: 200px;
+  }
+
+  #mainMenu li {
+    margin-left: 60px;
+  }
+
+  #mainMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .menu-list {
+    backdrop-filter: none;
+  }
+
+  .main-page {
+    text-align: center;
+  }
+
+  .main-page h1 {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .main-page p {
+    margin-bottom: 106px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .main-page a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+
+  h2 {
+    padding-top: 24px;
+    text-align: left;
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+
+  .about,
+  .skill-container,
+  .portfolio,
+  footer {
+    padding: 0 166px;
+  }
+
+  .about p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .skill-container {
+    padding-top: 0;
+  }
+
+  .skill-container h2 {
+    margin-bottom: 10px;
+  }
+
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .skill h3,
+  h4,
+  p {
+    font-size: 16px;
+  }
+
+  .skills-list {
+    width: 18%;
+    margin-top: 0;
+  }
+
+  .skill-tools {
+    width: 34%;
+    margin-top: 0;
+  }
+
+  .skill-container img {
+    width: 180px;
+    height: 210px;
+    margin: 0 0 48px 0;
+    padding-top: 40px;
+  }
+
+  .portfolio {
+    padding-bottom: 48px;
+  }
+
+  .skill-level {
+    width: 80%;
+    height: 16px;
+  }
+
+  .address-contact {
+    padding-bottom: 10px;
+  }
+}
