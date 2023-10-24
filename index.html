@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-block">
+      <div class="overlay"></div>
+      <header>
+        <div class="content-wrap d-flex">
+          <a class="logo" href="#">Portofolio</a>
+          <nav class="main-menu">
+            <div id="iconWrap" class="icons">
+              <i id="iconOpen" class="fa-solid fa-bars"></i>
+              <i id="iconClose" class="fa-solid fa-xmark hide"></i>
+            </div>
+            <ul id="mainMenu" class="menu-list hide-menu">
+              <li>
+                <a href="#"> Home </a>
+              </li>
+
+              <li>
+                <a href="#about"> About </a>
+              </li>
+              <li>
+                <a href="#skills"> Skills </a>
+              </li>
+              <li>
+                <a href="#portfolio"> Portfolio </a>
+              </li>
+              <li>
+                <a href="#contact"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="main-page">
+        <h1>Hi, It’s Nataliia Fedoriv</h1>
+        <p>Designer from Ukraine</p>
+        <a href="#portfolio">Latest works</a>
+      </section>
+    </div>
+    <main>
+      <section class="about" id="about">
+        <h2>About</h2>
+        <p>
+          Hello! My name is Nataliia. I am a beginner designer and developer and
+          I invite you to my portfolio website. My goal is to create creative
+          and innovative websites and apps that inspire and benefit users.
+          <br /><br />
+          I believe that every project is an opportunity to bring ideas to life
+          and create something unique. I always try to improve and develop my
+          skills to always deliver the best results.
+          <br /><br />
+          In my portfolio you can find examples of my work that reflect my
+          skills and style. I am always open to new projects and cooperation
+          opportunities.
+        </p>
+      </section>
+      <section class="skill-container" id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <img src="./images/portrait.jpg" alt="Портрет" class="portrait-img" />
+          <ul class="skills-list">
+            <li>
+              <h3>Profile</h3>
+            </li>
+            <li>
+              <h3>Front-end Dev</h3>
+            </li>
+            <li>
+              <h3>Tools</h3>
+            </li>
+            <li>
+              <h3>UI Design</h3>
+            </li>
+            <li>
+              <h3>Tools</h3>
+            </li>
+            <li>
+              <h3>UX Research</h3>
+            </li>
+            <li>
+              <h3>Tools</h3>
+            </li>
+          </ul>
+          <ul class="skill-tools">
+            <li><p>UI/UX Engineer, Front-end Developer</p></li>
+            <li class="skill-level">
+              <div class="skill-level-indicator" style="width: 40%"></div>
+            </li>
+            <li><p>HTML, CSS, JS, Bootstrap, React</p></li>
+            <li class="skill-level">
+              <div class="skill-level-indicator" style="width: 60%"></div>
+            </li>
+            <li><p>Adobe PS, AI, XD, Figma, InVision</p></li>
+            <li class="skill-level">
+              <div class="skill-level-indicator" style="width: 65%"></div>
+            </li>
+            <li><p>Paper, Pen, Balsamiq</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <h3>My works</h3>
+        <a href="./LR1/index.html">Лабораторна робота №1</a>
+        <a href="./LR2/index.html">Лабораторна робота №2</a>
+        <a href="https://superlative-palmier-1e5f52.netlify.app/">Сайт</a>
+      </section>
+    </main>
+    <footer>
+      <address id="contact">
+        <h2 class="address-contact">Get in Touch</h2>
+        <ul class="address-contact-link">
+          <li>
+            <a href="https://t.me/Fedorivnataliia"> Telegram</a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/nataliia.fedoriiv?igshid=MzNlNGNkZWQ4Mg=="
+              >Instagram
+            </a>
+          </li>
+          <li>
+            <a href="#">GitHub</a>
+          </li>
+        </ul>
+        <ul class="address-contact-list">
+          <li>
+            <a href="tel:+380665973607"> +380665973607</a>
+          </li>
+          <li>
+            <a href="mailto:nataliia.fedoriv-ki2001@kep.nung.edu.ua">
+              E-mail
+            </a>
+          </li>
+        </ul>
+        <a href="#top" class="scroll-to-top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </address>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>
