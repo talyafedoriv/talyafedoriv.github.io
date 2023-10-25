@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 4</title>
+    <style>
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      input {
+        padding: 5px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      button {
+        background-color: #00a2ff;
+        color: #fff;
+        border: none;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      button:hover {
+        background-color: #0000dc;
+      }
+
+      #result {
+        margin-top: 20px;
+        color: #0000dc;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Введіть свою ставку:</p>
+    <input type="number" id="userBet" />
+    <button onclick="playGame()">Грати</button>
+    <p id="result"></p>
+
+    <script>
+      function playGame() {
+        const userBet = parseFloat(document.getElementById("userBet").value);
+
+        if (isNaN(userBet)) {
+          document.getElementById("result").textContent =
+            "Будь ласка, введіть коректну ставку.";
+          return;
+        }
+
+        const randomValue = Math.floor(Math.random() * 11) - 5;
+
+        let resultMessage = "";
+        if (randomValue <= 0) {
+          resultMessage = "На жаль, ви програли вашу ставку.";
+        } else {
+          const winnings = userBet * randomValue;
+          resultMessage = `Вітаємо, ви виграли ${winnings} гривень!`;
+        }
+
+        document.getElementById("result").textContent = resultMessage;
+      }
+    </script>
+  </body>
+</html>

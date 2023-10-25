@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 3</title>
+    <style>
+      body,
+      input,
+      button,
+      #output {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      input {
+        font-size: 18px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #0000dc;
+      }
+
+      button {
+        background-color: #00a2ff;
+        color: #fff;
+        border: none;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+
+      button:hover {
+        background-color: #0000dc;
+      }
+
+      #output {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #0000dc;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="userInput" placeholder="Введіть фразу" />
+    <button onclick="printUserInput()">Друк</button>
+    <div id="output"></div>
+    <script>
+      function printText(text, index) {
+        const output = document.getElementById("output");
+        if (index < text.length) {
+          output.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(function () {
+            printText(text, index);
+          }, 200);
+        }
+      }
+
+      function printUserInput() {
+        const userInput = document.getElementById("userInput").value;
+        const output = document.getElementById("output");
+        output.innerHTML = "";
+        if (userInput) {
+          printText(userInput, 0);
+        } else {
+          output.innerHTML = "Фразу не було введено.";
+        }
+      }
+    </script>
+  </body>
+</html>

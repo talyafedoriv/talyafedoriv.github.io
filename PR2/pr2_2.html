@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання 2</title>
+    <style>
+      input {
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #0000dc;
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="chas" size="10" />
+    <script>
+      function time() {
+        let time = new Date();
+        chas.value =
+          time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+      }
+
+      function updateWarning() {
+        time();
+        alert("Час оновлено!");
+      }
+      time();
+      setInterval(time, 30000);
+      setInterval(updateWarning, 30000);
+    </script>
+  </body>
+</html>
