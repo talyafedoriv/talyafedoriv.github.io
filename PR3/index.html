@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping List</title>
+    <style>
+      body {
+        font-size: 18px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .item-container {
+        display: flex;
+        align-items: center;
+      }
+      .delete-button {
+        margin-left: 16px;
+        margin-right: 8px;
+      }
+      #item {
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My shopping List</h1>
+    <div class="item-container">
+      <p>Enter a new item:</p>
+      <input type="text" id="item" />
+      <button onclick="addItem()">Add item</button>
+    </div>
+
+    <ul id="shoppingList"></ul>
+
+    <script>
+      function addItem() {
+        var input = document.getElementById("item");
+        var itemText = input.value.trim();
+        if (itemText === "") return;
+
+        var shoppingList = document.getElementById("shoppingList");
+
+        var listItem = document.createElement("li");
+        listItem.innerHTML = itemText;
+
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete";
+        deleteButton.className = "delete-button";
+        deleteButton.onclick = function () {
+          if (confirm("Delete this item?")) {
+            listItem.remove();
+          }
+        };
+
+        var editButton = document.createElement("button");
+        editButton.innerHTML = "Edit";
+        editButton.className = "edit-button";
+        editButton.onclick = function () {
+          var newText = prompt("Edit the item:", itemText);
+          if (newText !== null) {
+            itemText = newText;
+            listItem.innerHTML = itemText;
+            listItem.appendChild(deleteButton);
+            listItem.appendChild(editButton);
+          }
+        };
+
+        listItem.appendChild(deleteButton);
+        listItem.appendChild(editButton);
+        shoppingList.appendChild(listItem);
+
+        input.value = "";
+        input.focus();
+      }
+    </script>
+  </body>
+</html>
