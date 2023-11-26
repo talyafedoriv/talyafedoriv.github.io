@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="tabs">
+      <div class="tab whiteborder">Radius</div>
+      <div class="tab">Align-self</div>
+      <div class="tab">Flex-flow</div>
+      <div class="tabContent">
+        <div>
+          Верхній лівий радіус:
+          <input
+            type="range"
+            id="rtl"
+            min="0"
+            max="100"
+            value="0"
+            oninput="generate()"
+          />
+          <input type="text" id="ttl" value="0" />
+        </div>
+        <div>
+          Верхній правий радіус:
+          <input
+            type="range"
+            id="rtr"
+            min="0"
+            max="100"
+            value="0"
+            oninput="generate()"
+          />
+          <input type="text" id="ttr" value="0" />
+        </div>
+        <div>
+          Нижній правий радіус:
+          <input
+            type="range"
+            id="rbr"
+            min="0"
+            max="100"
+            value="0"
+            oninput="generate()"
+          />
+          <input type="text" id="tbr" value="0" />
+        </div>
+        <div>
+          Нижній лівий радіус:
+          <input
+            type="range"
+            id="rbl"
+            min="0"
+            max="100"
+            value="0"
+            oninput="generate()"
+          />
+          <input type="text" id="tbl" value="0" />
+        </div>
+      </div>
+      <div class="tabContent">
+        <div>
+          Align-self:
+          <select id="alignSelf" onchange="generate()">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="center">Center</option>
+            <option value="baseline">Baseline</option>
+            <option value="stretch">Stretch</option>
+          </select>
+        </div>
+      </div>
+      <div class="tabContent">
+        <div>
+          Flex-flow:
+          <select id="flexFlow" onchange="generate()">
+            <option value="row nowrap">Row Nowrap</option>
+            <option value="row-reverse nowrap">Row Reverse Nowrap</option>
+            <option value="column nowrap">Column Nowrap</option>
+            <option value="column-reverse nowrap">Column Reverse Nowrap</option>
+            <option value="row wrap">Row Wrap</option>
+            <option value="row-reverse wrap">Row Reverse Wrap</option>
+            <option value="column wrap">Column Wrap</option>
+            <option value="column-reverse wrap">Column Reverse Wrap</option>
+            <option value="row wrap-reverse">Row Wrap-reverse</option>
+            <option value="row-reverse wrap-reverse">
+              Row Reverse Wrap-reverse
+            </option>
+            <option value="column wrap-reverse">Column Wrap-reverse</option>
+            <option value="column-reverse wrap-reverse">
+              Column Reverse Wrap-reverse
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+
+      <div id="code">
+        Code:
+        <textarea id="cssCode" rows="3" cols="40"></textarea>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
