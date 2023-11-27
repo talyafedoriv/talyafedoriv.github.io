@@ -56,7 +56,7 @@
         "price": "2600 UAH",
         "availability": "Add to Cart",
         "specialMark": "Novelty",
-        "discount": null,
+        "discount": "",
         "advantages": [
           "Compact Design",
           "Powerful Motor",
@@ -101,7 +101,7 @@
         "price": "2500 UAH",
         "availability": "Add to Cart",
         "specialMark": "Best Seller",
-        "discount": null,
+        "discount": "",
         "advantages": [
           "Powerful Motor",
           "Adjustable Cutting Height",
