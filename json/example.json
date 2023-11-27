@@ -1,0 +1,96 @@
+{
+  "mainName" : "Shop",
+  "location" : "Ivano Frankivsk",
+  "formed" : 2023,
+  "type" : "Electrical instruments",
+  "items" : [
+    {
+      "name" : "Drill-screwdriver",
+      "model": "Makita 18 В",
+      "price" : "3500 UAH",
+      "availability": true,
+      "advantages": [
+         "Cordless",
+         "Compact design",
+         "High-performance motor"
+      ]
+    },
+    {
+  "name": "Cordless Chainsaw",
+  "model": "Makita DUC355",
+  "price": "10000 UAH",
+  "availability": true,
+  "advantages": [
+    "Cordless Operation",
+    "Efficient Chain System",
+    "Compact and Lightweight"
+  ]
+},{
+  "name": "Construction Vacuum",
+  "model": "Makita DCL180Z",
+  "price": "2800 UAH",
+  "availability": true,
+  "advantages": [
+    "HEPA Filtration",
+    "Portable and Versatile",
+    "Powerful Suction"
+  ]
+},
+{
+  "name": "Angle Grinder",
+  "model": "Makita GA5030",
+  "price": "2600 UAH",
+  "availability": true,
+  "advantages": [
+    "Compact Design",
+    "Powerful Motor",
+    "Easy to Handle"
+  ]
+},
+{
+  "name": "High-Pressure Washer",
+  "model": "Makita HW102",
+  "price": "4800 UAH",
+  "availability": true,
+  "advantages": [
+    "High Pressure",
+    "Compact and Portable",
+    "Efficient Cleaning"
+  ]
+},
+{
+  "name": "Electric Jigsaw",
+  "model": "Makita 4351CTJ",
+  "price": "5500 UAH",
+  "availability": true,
+  "advantages": [
+    "Precision Cutting",
+    "Variable Speed",
+    "Tool-less Blade Change"
+  ]
+},
+{
+  "name": "Electric Lawn Mower",
+  "model": "Makita ELM3720",
+  "price": "9000 UAH",
+  "availability": true,
+  "advantages": [
+    "Powerful Motor",
+    "Adjustable Cutting Height",
+    "Foldable Handle"
+  ]
+},
+{
+  "name": "Cordless Blower",
+  "model": "Makita DUB186Z",
+  "price": "7200 UAH",
+  "availability": true,
+  "advantages": [
+    "Compact and Portable",
+    "Variable Speed",
+    "Quiet Operation"
+  ]
+}
+
+  ]
+}
