@@ -26,7 +26,7 @@
         "price": "10000 UAH",
         "availability": "Not Yet Available",
         "specialMark": "Novelty",
-        "discount": "15%",
+        "discount": "",
         "advantages": [
           "Cordless Operation",
           "Efficient Chain System",
@@ -71,7 +71,7 @@
         "price": "4800 UAH",
         "availability": "Not Yet Available",
         "specialMark": null,
-        "discount": "15%",
+        "discount": "",
         "advantages": [
           "High Pressure",
           "Compact and Portable",
