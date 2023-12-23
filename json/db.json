@@ -1,0 +1,87 @@
+{"products": [
+  {
+    "id": 1,
+    "images": "/assets/images/armani-my-way.png",
+    "name": "My Way",
+    "brand": "ARMANI",
+    "size": "30 ml",
+    "type": "Perfumed water",
+    "price": "2000",
+    "country":"France",
+    "description":"",
+    "aroma": "bergamot, vanilla, jasmine, cedar, white musk, tuberose, orange blossom",
+    "gender": "for women",
+    "discount":"10"
+  },
+  {
+    "id": 2,
+    "images": "/assets/images/banderas-king-of-seduction.png",
+    "name": "King Of Seduction",
+    "brand": "BANDERAS",
+    "size": "50 ml",
+    "type": "Weak perfume",
+    "price": "600",
+    "country":"Spain",
+    "description":"",
+    "aroma": "pineapple, bergamot, water, cardamom, cedar",
+    "gender": "for men",
+    "discount":"20"
+  },
+  {
+    "id": 3,
+    "images": "/assets/images/karl-lagerfeld-fleur-de-murier.png",
+    "name": "Fleur de Murier",
+    "brand": "KARL LAGERFELD",
+    "size": "50 ml",
+    "type": "Perfumed water",
+    "price": "1200",
+    "country":"France",
+    "description":"",
+    "aroma": "woody, chypre",
+    "gender": "for women",
+    "discount":""
+  },
+  {
+    "id": 4,
+    "images": "/assets/images/mancera-aoud-lemon-mint.png",
+    "name": "Aoud Lemon Mint",
+    "brand": "MANCERA",
+    "size": "60 ml",
+    "type": "Perfumed water",
+    "price": "2500",
+    "country":"France",
+    "description":"",
+    "aroma": "citrus, plume",
+    "gender": "for men, for women",
+    "discount":"35"
+  },
+  {
+    "id": 5,
+    "images": "/assets/images/eisenberg-paris-i-am.png",
+    "name": "I Am",
+    "brand": "EISENBERG PARIS",
+    "size": "30 ml",
+    "type": "Perfumed water",
+    "price": "1800",
+    "country":"France",
+    "description":"",
+    "aroma": "amber, orange, bergamot, magnolia, raspberry",
+    "gender": "for women",
+    "discount":""
+  },
+  {
+    "id": 6,
+    "images": "/assets/images/moschino-funny.png",
+    "name": "Funny!",
+    "brand": "MOSCHINO",
+    "size": "50 ml",
+    "type": "Weak perfume",
+    "price": "2100",
+    "country":"Italy",
+    "description":"",
+    "aroma": "orange, cedar, lemon verbena, moss, peony, red currant, green tea, amber",
+    "gender": "for women",
+    "discount":""
+  }
+]
+}
