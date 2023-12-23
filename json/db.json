@@ -1,7 +1,7 @@
 {"products": [
   {
     "id": 1,
-    "images": "/assets/images/armani-my-way.png",
+    "images": "./images/armani-my-way.png",
     "name": "My Way",
     "brand": "ARMANI",
     "size": "30 ml",
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "images": "/assets/images/banderas-king-of-seduction.png",
+    "images": "./images/banderas-king-of-seduction.png",
     "name": "King Of Seduction",
     "brand": "BANDERAS",
     "size": "50 ml",
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "images": "/assets/images/karl-lagerfeld-fleur-de-murier.png",
+    "images": "./images/karl-lagerfeld-fleur-de-murier.png",
     "name": "Fleur de Murier",
     "brand": "KARL LAGERFELD",
     "size": "50 ml",
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "images": "/assets/images/mancera-aoud-lemon-mint.png",
+    "images": "./images/mancera-aoud-lemon-mint.png",
     "name": "Aoud Lemon Mint",
     "brand": "MANCERA",
     "size": "60 ml",
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "images": "/assets/images/eisenberg-paris-i-am.png",
+    "images": "./images/images/eisenberg-paris-i-am.png",
     "name": "I Am",
     "brand": "EISENBERG PARIS",
     "size": "30 ml",
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "images": "/assets/images/moschino-funny.png",
+    "images": "./images/images/moschino-funny.png",
     "name": "Funny!",
     "brand": "MOSCHINO",
     "size": "50 ml",
