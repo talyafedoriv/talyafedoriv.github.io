@@ -1,7 +1,7 @@
 {"products": [
   {
     "id": 1,
-    "images": "./images/armani-my-way.png",
+    "images": "https://www.brocard.ua/media/catalog/product/21373418f9/eyJ3Ijo1MDAsImgiOjUwMCwibyI6ImNhdGFsb2dcL3Byb2R1Y3RcL1wvM1wvNlwvMzYxNDI3MjkwNzY1Ml8xLmpwZyJ9/armani-my-way.webp",
     "name": "My Way",
     "brand": "ARMANI",
     "size": "30 ml",
